@@ -222,6 +222,96 @@ nav {
 
 .ponto.ativo {background: goldenrod; }
 
+.contact-section {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px 20px 60px;
+}
+
+.contact-title {
+  text-align: center;
+  color: rgb(250, 188, 32);
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+
+.form-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: rgba(0,0,0,0.6);
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  position: relative;
+}
+
+.form-group label {
+  color: goldenrod;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.form-group input, .form-group textarea {
+  padding: 10px 12px;
+  border: 1px solid goldenrod;
+  border-radius: 6px;
+  background-color: #1a1a1a;
+  color: white;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+  outline: none;
+  border-color: rgb(250, 188, 32);
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.adress-result {
+  font-size: 14px;
+  color: rgb(250, 188, 32);
+  min-height: 18px;
+}
+
+.adress-result.erro {
+  color: rgb(239, 44, 10);
+}
+
+.btn-send {
+  margin-top: 10px;
+  padding: 14px;
+  background-color: goldenrod;
+  color: black;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 200ms ease-in-out;
+}
+
+.btn-send:hover {
+  background-color: rgb(250, 188, 32);
+}
+
+.message-thanks {
+  text-align: center;
+  color: goldenrod;
+  font-size: 18px;
+  margin-top: 16px;
+  min-height: 24px;
+}
+
 @media (max-width: 768px) {
   nav {
     position: relative;
