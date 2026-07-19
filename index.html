@@ -24,8 +24,8 @@
       </div>
       <ul class="nav-links">
         <li><a href="#about-section">Sobre nós</a></li>
-        <li><a href="#motos">Motos</a></li>
-        <li><a href="#contatos">Contatos</a></li>
+        <li><a href="#bikes">Motos</a></li>
+        <li><a href="#more" class="btn-cta" id="btn-cta">Saiba Mais</a></li>
       </ul>
     </nav>
 
@@ -42,13 +42,39 @@
       <p>Fundada em 2021, a Concessionária Fogassi surgiu da paixão por motocicletas custom de seu fundador, Júnior Fogassi. Com sedes em Porto Alegre e na serra Gaúcha, a Concessionária Fogassi fornece atendimentos personalizados para vendas de motocicletas, peças, customizações e tambem conta com uma oficina própria para reparos e manuntenções. Seja para buscar novas opções ou melhorar a sua moto atual, conte conosco!</p>
     </div>
     
-    <div class="carroussel">
-      <div class="slides">
-        <div class="slide">Slide 1</div>
-        <div class="slide">Slide 2</div>
-        <div class="slide">Slide 3</div>
-      </div> 
+    <div class="carroussel" id="bikes">
+      <div class="slides" id="slides">
+        <div class="slide">
+          <img src="img/street-bob.jpg" alt="Street Bob">
+          <span class="bike-model">Street Bob</span>
+        </div>
+        <div class="slide">
+          <img src="img/sportster.jpg" alt="Sportster">
+          <span class="bike-model">Sportster</span>
+        </div>
+        <div class="slide">
+          <img src="img/cvo.jpg" alt="CVO">
+          <span class="bike-model">CVO</span>
+        </div>
+      </div>
+      
+      <button class="prev-arrow" onclick="mudarSlide(-1)">&#10094</button>
+      <button class="next-arrow" onclick="mudarSlide(1)">&#10095</button>
+
+      <div class="indicators" id="indicators"></div>
     </div>
+
+    <div class="contact-section" id="more">
+      <h2 class="contact-title">Fale Conosco</h2>
+      
+      <form id="form-contact" class="form-contact">
+        <div class="form-group">
+          
+        </div>
+      </form>
+    </div>
+
   </body>
   <script src="js/navigation.js"></script>
+  <script src="js/carroussel.js"></script>
 </html>
